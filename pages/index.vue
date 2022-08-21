@@ -1,16 +1,16 @@
 <template>
   <div class="container">
     <PastEventsGrid />
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
 <script lang="ts">
 import PastEventsGrid from '~/components/PastEventsGrid.vue';
-import Footer from '~/components/Footer.vue';
+import AppFooter from '~/components/AppFooter.vue';
 export default {
   name: 'HomePage',
-  components: { PastEventsGrid, Footer },
+  components: { PastEventsGrid, AppFooter },
   head() {
     return {
       title: 'Bitcamp',

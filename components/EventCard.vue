@@ -1,7 +1,7 @@
 <template>
   <div
     class="event"
-    v-bind:style="{
+    :style="{
       background: `no-repeat center center url('assets/img/thumbnails/${year}-thumb.jpg')`,
     }"
   >
@@ -20,8 +20,14 @@
 export default {
   name: 'EventCard',
   props: {
-    year: 0,
-    theme: '',
+    year: {
+      type: Number,
+      required: true,
+    },
+    theme: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>

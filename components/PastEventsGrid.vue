@@ -13,9 +13,10 @@ export default {
   components: { EventCard },
   data() {
     return {
-      years: [2020, 2019, 2018, 2017, 2016, 2015, 2014],
+      years: [2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014],
       themes: {
-        2020: 'Explore Together',
+        2022: 'Adventure Awaits',
+        2021: 'Explore Together',
         2019: 'Build With Purpose',
         2018: 'Mark Your Trail',
         2017: 'Build Together',

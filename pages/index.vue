@@ -1,5 +1,7 @@
 <template>
   <div class="app-container">
+    <img src="../assets/img/blobs/blue-blobs.svg" class="blue-blobs" />
+    <img src="../assets/img/blobs/white-blobs.svg" class="white-blobs" />
     <AppHeader />
     <PastEventsGrid />
     <AppFooter />
@@ -10,6 +12,7 @@
 import AppHeader from '~/components/AppHeader.vue';
 import PastEventsGrid from '~/components/PastEventsGrid.vue';
 import AppFooter from '~/components/AppFooter.vue';
+
 export default {
   name: 'HomePage',
   components: { AppHeader, PastEventsGrid, AppFooter },
@@ -112,14 +115,32 @@ export default {
 
 <style scoped>
 .app-container {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   width: 100vw;
   min-height: 100%;
-
   background-color: #cbf2ff;
-  background-image: url('/assets/img/floaties/blobs.svg');
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+img.white-blobs {
+  /* Set rules to fill background */
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  position: fixed;
+}
+
+img.blue-blobs {
+  /* Set rules to fill background */
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  /* Set up positioning */
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 </style>

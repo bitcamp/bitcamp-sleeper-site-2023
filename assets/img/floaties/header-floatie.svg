@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1818.6794"
+   height="1220.9758"
+   viewBox="0 0 1818.6794 1220.9758"
+   fill="none"
+   version="1.1"
+   id="svg783"
+   sodipodi:docname="top floatie.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs787" />
+  <sodipodi:namedview
+     id="namedview785"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.37059593"
+     inkscape:cx="1076.6443"
+     inkscape:cy="747.44479"
+     inkscape:window-width="1500"
+     inkscape:window-height="950"
+     inkscape:window-x="0"
+     inkscape:window-y="12"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg783" />
+  <g
+     style="mix-blend-mode:luminosity"
+     id="g773"
+     transform="translate(390.87109,113.87065)">
+    <rect
+       x="-186.12"
+       y="-95"
+       width="1738"
+       height="776"
+       rx="194"
+       transform="rotate(17,-186.12,-95)"
+       fill="#6db0cd"
+       fill-opacity="0.5"
+       id="rect771" />
+  </g>
+  <rect
+     x="156.86885"
+     y="-98.288086"
+     width="1738"
+     height="776"
+     rx="194"
+     transform="rotate(17)"
+     fill="#ffaf3f"
+     id="rect775" />
+  <rect
+     x="210.2894"
+     y="-28.420458"
+     width="1598.48"
+     height="636.97803"
+     rx="124"
+     transform="rotate(17)"
+     fill="#ff6f3f"
+     id="rect777" />
+  <ellipse
+     cx="1748.8611"
+     cy="603.05164"
+     rx="26.5"
+     ry="26"
+     fill="#ff6f3f"
+     id="ellipse779" />
+  <circle
+     cx="1741.3611"
+     cy="544.05164"
+     r="19"
+     fill="#ff6f3f"
+     id="circle781" />
+</svg>

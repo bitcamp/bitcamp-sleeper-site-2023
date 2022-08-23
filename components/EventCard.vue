@@ -2,7 +2,7 @@
   <div
     class="event"
     :style="{
-      background: `no-repeat center center url('assets/img/thumbnails/${year}-thumb.jpg')`,
+      background: `no-repeat center center url('/assets/img/thumbnails/${year}-thumb.jpg')`,
     }"
   >
     <a :href="`https://${year}.bit.camp`">
@@ -34,8 +34,8 @@ export default {
 
 <style scoped>
 .event {
-  width: 420px;
-  height: 280px;
+  width: min(420px, 70vw);
+  aspect-ratio: 3 / 2;
   margin: 20px;
 
   color: white;
@@ -47,6 +47,8 @@ export default {
   /* !important so we don't have to repeat*/
   box-shadow: 0px, 0px, 20px, 0px rgba(0, 0, 0, 0.2);
   position: relative;
+
+  z-index: 10;
 }
 
 .event a {

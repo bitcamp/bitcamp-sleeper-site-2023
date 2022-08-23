@@ -1,8 +1,13 @@
 <template>
-  <div id="past-grid">
-    <div v-for="year in years" :key="year">
-      <EventCard :year="year" :theme="themes[year]" />
+  <div class="grid-container">
+    <img class="bb-floatie" src="/assets/img/floaties/bb-floatie.svg" />
+    <h1 class="bb-floatie-text">Explore Our Past Events</h1>
+    <div class="past-grid">
+      <template v-for="year in years" :key="year">
+        <EventCard :year="year" :theme="themes[year]" />
+      </template>
     </div>
+    <img class="circle-floatie" src="/assets/img/floaties/circle-floatie.svg" />
   </div>
 </template>
 
@@ -29,13 +34,47 @@ export default {
 };
 </script>
 
-<style>
-#past-grid {
+<style scoped>
+.grid-container {
+  position: relative;
+}
+
+.past-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+}
 
-  max-width: 1000px;
-  margin: auto;
+.bb-floatie {
+  width: 50vw;
+  margin-left: -2vw;
+  margin-bottom: -15vw;
+}
+
+.bb-floatie-text {
+  position: absolute;
+  color: white;
+  transform: rotate(-20.5deg);
+  font-size: 2.8vw;
+
+  top: 13vw;
+  left: 7.5vw;
+}
+
+.circle-floatie {
+  width: 75vw;
+  margin-left: 60vw;
+  margin-top: -75vh;
+}
+
+/* mobile view */
+@media (max-width: 920px) {
+  .circle-floatie {
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    top: 60vh;
+  }
 }
 </style>

@@ -1,16 +1,18 @@
 <template>
-  <div class="container">
+  <div class="app-container">
+    <AppHeader />
     <PastEventsGrid />
     <AppFooter />
   </div>
 </template>
 
 <script lang="ts">
+import AppHeader from '~/components/AppHeader.vue';
 import PastEventsGrid from '~/components/PastEventsGrid.vue';
 import AppFooter from '~/components/AppFooter.vue';
 export default {
   name: 'HomePage',
-  components: { PastEventsGrid, AppFooter },
+  components: { AppHeader, PastEventsGrid, AppFooter },
   head() {
     return {
       title: 'Bitcamp',
@@ -109,14 +111,15 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  width: 100vw;
-  height: 90vh;
-  padding-top: 10vh;
-  text-align: center;
-
+.app-container {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   min-height: 100%;
+
+  background-color: #cbf2ff;
+  background-image: url('/assets/img/floaties/blobs.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 </style>

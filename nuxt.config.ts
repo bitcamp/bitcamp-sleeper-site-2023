@@ -6,4 +6,5 @@ export default defineNuxtConfig({
     strict: true,
   },
   css: ['~/assets/css/global.css'],
+  plugins: ['~/plugins/vue-kinesis.js'],
 });

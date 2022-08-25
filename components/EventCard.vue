@@ -38,7 +38,6 @@ export default {
   aspect-ratio: 3 / 2;
   margin: 20px;
 
-  color: white;
   text-align: left;
 
   border-radius: 35px;
@@ -49,10 +48,6 @@ export default {
   position: relative;
 
   z-index: 10;
-}
-
-.event a {
-  color: white;
 }
 
 .event-text {

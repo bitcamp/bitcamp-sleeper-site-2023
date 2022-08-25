@@ -3,16 +3,19 @@
     <div class="header-container">
       <kinesis-element :strength="100">
         <kinesis-element :strength="50" :perspective="1500">
-          <img
-            class="green-marshie"
-            src="../assets/img/floaties/green-marshie.svg"
-          />
-          <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
-          <p class="header-body">
-            Bitcamp will return in 2023!<br />
-            Follow us on our socials to be the first to know when<br />
-            organizer applications and general registration opens!
-          </p>
+          <div class="header-content">
+            <img
+              class="green-marshie"
+              src="../assets/img/floaties/green-marshie.svg"
+            />
+            <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
+            <p class="header-body">
+              Bitcamp will return in 2023!<br />
+              Follow us on our socials to be the first to know when<br />
+              organizer applications and general registration opens!
+            </p>
+            <SocialIcons />
+          </div>
         </kinesis-element>
         <img
           class="header-floatie"
@@ -24,8 +27,10 @@
 </template>
 
 <script lang="ts">
+import SocialIcons from '~/components/SocialIcons.vue';
 export default {
   name: 'AppHeader',
+  components: { SocialIcons },
 };
 </script>
 
@@ -41,25 +46,25 @@ export default {
   width: 100vw;
 }
 
-.header-title {
-  position: absolute;
-  color: white;
-  text-align: right;
-  line-height: 1.3;
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
 
-  font-size: 2.8vw;
-  top: 15vw;
+  position: absolute;
+  text-align: right;
+  top: 10vw;
   right: 30vw;
 }
 
+.header-title {
+  line-height: 1.3;
+  font-size: 2.8vw;
+}
+
 .header-body {
-  position: absolute;
-  color: white;
-  text-align: right;
   width: auto;
   font-size: 1.4vw;
-  top: 25vw;
-  right: 30vw;
 }
 
 .green-marshie {
@@ -67,7 +72,7 @@ export default {
   text-align: left;
   transform: rotate(-17deg);
   width: 29vw;
-  margin-top: 3vw;
-  margin-left: 8vw;
+  margin-top: -5vw;
+  margin-left: -30vw;
 }
 </style>

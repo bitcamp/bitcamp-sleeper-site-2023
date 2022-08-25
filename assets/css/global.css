@@ -1,9 +1,8 @@
 html,
 body {
-  background: #f7f7f7;
   font-size: 1.8rem;
   font-family: Avenir;
-  color: #575757;
+  color: white;
   line-height: 1.5;
   width: 100%;
   height: 100%;
@@ -62,6 +61,6 @@ h6 {
 
 p,
 a {
-  color: #575757;
+  color: white;
   text-decoration: none;
 }

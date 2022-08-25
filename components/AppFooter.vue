@@ -24,15 +24,10 @@ export default {
 footer {
   position: relative;
   box-sizing: border-box;
-  color: white;
 
   height: 30vw;
   width: 100vw;
   overflow: hidden;
-}
-
-footer a {
-  color: white;
 }
 
 .footer-floatie {

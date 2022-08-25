@@ -120,7 +120,6 @@ export default {
   flex-direction: column;
   width: 100vw;
   min-height: 100%;
-  background-color: #cbf2ff;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }

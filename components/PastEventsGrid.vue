@@ -54,7 +54,6 @@ export default {
 
 .bb-floatie-text {
   position: absolute;
-  color: white;
   transform: rotate(-20.5deg);
   font-size: 2.8vw;
 

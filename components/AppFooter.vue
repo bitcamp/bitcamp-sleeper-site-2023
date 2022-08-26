@@ -1,6 +1,11 @@
 <template>
   <footer>
-    <img class="footer-floatie" src="/assets/img/floaties/footer-floatie.svg" />
+    <kinesis-container :strength="25">
+      <kinesis-element :strength="25">
+        <img class="footer-floatie" src="/assets/img/floaties/footer-floatie.svg" />
+      </kinesis-element>
+    </kinesis-container>
+
     <div class="floatie-text">
       <div class="links">
         <a href="http://mlh.io/code-of-conduct">MLH Code of Conduct</a> |

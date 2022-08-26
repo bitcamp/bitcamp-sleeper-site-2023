@@ -1,13 +1,10 @@
 <template>
   <kinesis-container class="container">
     <div class="header-container">
-      <kinesis-element :strength="100">
-        <kinesis-element :strength="50" :perspective="1500">
+      <kinesis-element :strength="50">
+        <kinesis-element :strength="50">
           <div class="header-content">
-            <img
-              class="green-marshie"
-              src="../assets/img/floaties/green-marshie.svg"
-            />
+            <img class="green-marshie" src="../assets/img/floaties/green-marshie.png" />
             <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
             <p class="header-body">
               Bitcamp will return in 2023!<br />
@@ -17,10 +14,7 @@
             <SocialIcons />
           </div>
         </kinesis-element>
-        <img
-          class="header-floatie"
-          src="/assets/img/floaties/header-floatie.svg"
-        />
+        <img class="header-floatie" src="/assets/img/floaties/header-floatie.svg" />
       </kinesis-element>
     </div>
   </kinesis-container>

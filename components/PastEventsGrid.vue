@@ -1,13 +1,21 @@
 <template>
   <div class="grid-container">
-    <img class="bb-floatie" src="/assets/img/floaties/bb-floatie.svg" />
-    <h1 class="bb-floatie-text">Explore Our Past Events</h1>
+    <kinesis-container :strength="25">
+      <kinesis-element :strength="25">
+        <img class="bb-floatie" src="/assets/img/floaties/bb-floatie.svg" />
+        <h1 class="bb-floatie-text">Explore Our Past Events</h1>
+      </kinesis-element>
+    </kinesis-container>
     <div class="past-grid">
       <template v-for="year in years" :key="year">
         <EventCard :year="year" :theme="themes[year]" />
       </template>
     </div>
-    <img class="circle-floatie" src="/assets/img/floaties/circle-floatie.svg" />
+    <kinesis-container :strength="100">
+      <kinesis-element :strength="50">
+        <img class="circle-floatie" src="/assets/img/floaties/circle-floatie.svg" />
+      </kinesis-element>
+    </kinesis-container>
   </div>
 </template>
 

@@ -124,22 +124,49 @@ export default {
   background-repeat: no-repeat;
 }
 
+@keyframes water-ripple {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(2vw);
+  }
+
+  50% {
+    -webkit-transform: translateX(-2vw);
+  }
+}
+
+@-webkit-keyframes water-ripple {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(2vw);
+  }
+
+  50% {
+    -webkit-transform: translateX(-2vw);
+  }
+}
+
 img.white-blobs {
   /* Set rules to fill background */
 
   /* Set up proportionate scaling */
-  width: 100%;
+  width: 110%;
   position: fixed;
+  left: -2vw;
+  animation: water-ripple 10s ease infinite reverse;
 }
 
 img.blue-blobs {
   /* Set rules to fill background */
 
   /* Set up proportionate scaling */
-  width: 100%;
+  width: 110%;
+  left: -2vw;
   /* Set up positioning */
   top: 0;
-  left: 0;
   position: fixed;
+  animation: water-ripple 10s ease infinite;
 }
 </style>

@@ -1,23 +1,19 @@
 <template>
-  <kinesis-container class="container">
+  <div class="rotating-div">
     <div class="header-container">
-      <kinesis-element :strength="50">
-        <kinesis-element :strength="50">
-          <div class="header-content">
-            <img class="green-marshie" src="../assets/img/floaties/green-marshie.png" />
-            <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
-            <p class="header-body">
-              Bitcamp will return in 2023!<br />
-              Follow us on our socials to be the first to know when<br />
-              organizer applications and general registration opens!
-            </p>
-            <SocialIcons />
-          </div>
-        </kinesis-element>
-        <img class="header-floatie" src="/assets/img/floaties/header-floatie.svg" />
-      </kinesis-element>
+      <div class="header-content">
+        <img class="green-marshie" src="../assets/img/floaties/green-marshie.png" />
+        <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
+        <p class="header-body">
+          Bitcamp will return in 2023!<br />
+          Follow us on our socials to be the first to know when<br />
+          organizer applications and general registration opens!
+        </p>
+        <SocialIcons />
+      </div>
+      <img class="header-floatie" src="/assets/img/floaties/header-floatie.svg" />
     </div>
-  </kinesis-container>
+  </div>
 </template>
 
 <script lang="ts">
@@ -29,9 +25,62 @@ export default {
 </script>
 
 <style scoped>
+@keyframes floatie-bob {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(1vw);
+  }
+
+  50% {
+    -webkit-transform: translateY(-1vw);
+  }
+}
+
+@-webkit-keyframes floatie-bob {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(1vw);
+  }
+
+  50% {
+    -webkit-transform: translateY(-1vw);
+  }
+}
+
+@keyframes floatie-rotate {
+
+  0%,
+  100% {
+    -webkit-transform: rotate(17deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(14deg);
+  }
+}
+
+@-webkit-keyframes floatie-rotate {
+
+  0%,
+  100% {
+    -webkit-transform: rotate(17deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(14deg);
+  }
+}
+
+.rotating-div {
+  animation: floatie-rotate 10s ease infinite reverse;
+  transform: rotate(17deg);
+}
+
 .header-container {
   position: relative;
-  transform: rotate(17deg);
+  animation: floatie-bob 6s ease infinite reverse;
 }
 
 .header-floatie {

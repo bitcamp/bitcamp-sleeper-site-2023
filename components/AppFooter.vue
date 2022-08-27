@@ -12,7 +12,7 @@
     <div class="floatie-text">
       <div class="links">
         <a href="http://mlh.io/code-of-conduct">MLH Code of Conduct</a> |
-        <a href="./assets/brand.pdf">Brand Guidelines</a> |
+        <a href="/brand.pdf">Brand Guidelines</a> |
         <a href="mailto:hello@bit.camp">Contact Us</a>
       </div>
       <div class="copyright">

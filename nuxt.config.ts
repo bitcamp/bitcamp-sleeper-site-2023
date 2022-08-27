@@ -5,6 +5,6 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
-  css: ['~/assets/css/global.css'],
+  css: ['~/assets/css/global.css', '~/bitcamp-brand/bitcamp.css'],
   plugins: ['~/plugins/vue-kinesis.js'],
 });

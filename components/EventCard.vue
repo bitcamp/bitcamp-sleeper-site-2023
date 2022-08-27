@@ -2,7 +2,7 @@
   <div
     class="event"
     :style="{
-      background: `no-repeat center center url('/assets/img/thumbnails/${year}-thumb.jpg')`,
+      backgroundImage: `url('/img/thumbnails/${year}-thumb.jpg')`,
     }"
   >
     <a :href="`https://${year}.bit.camp`">

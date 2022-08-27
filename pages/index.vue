@@ -78,11 +78,6 @@ export default {
       ],
       link: [
         {
-          rel: 'stylesheet',
-          type: 'text/css',
-          href: '/bitcamp-brand/bitcamp.css',
-        },
-        {
           rel: 'icon',
           type: 'image/png',
           sizes: '32x32',

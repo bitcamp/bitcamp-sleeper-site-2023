@@ -2,7 +2,10 @@
   <footer>
     <kinesis-container :strength="25">
       <kinesis-element :strength="25">
-        <img class="footer-floatie" src="/assets/img/floaties/footer-floatie.svg" />
+        <img
+          class="footer-floatie"
+          src="/assets/img/floaties/footer-floatie.svg"
+        />
       </kinesis-element>
     </kinesis-container>
 

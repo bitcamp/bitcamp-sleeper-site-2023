@@ -1,21 +1,22 @@
 <template>
   <div class="grid-container">
-    <kinesis-container :strength="25">
-      <kinesis-element :strength="25">
+    <div class="rotate-div">
+      <div class="bob-div">
         <img class="bb-floatie" src="/assets/img/floaties/bb-floatie.svg" />
         <h1 class="bb-floatie-text">Explore Our Past Events</h1>
-      </kinesis-element>
-    </kinesis-container>
+      </div>
+    </div>
+
     <div class="past-grid">
       <template v-for="year in years" :key="year">
         <EventCard :year="year" :theme="themes[year]" />
       </template>
     </div>
-    <kinesis-container :strength="100">
-      <kinesis-element :strength="50">
+    <div class="rotate-div">
+      <div class="bob-div">
         <img class="circle-floatie" src="/assets/img/floaties/circle-floatie.svg" />
-      </kinesis-element>
-    </kinesis-container>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -43,6 +44,14 @@ export default {
 </script>
 
 <style scoped>
+.rotate-div {
+  animation: floatie-rotate 7s ease infinite reverse;
+}
+
+.bob-div {
+  animation: floatie-bob 6s ease infinite reverse;
+}
+
 .grid-container {
   position: relative;
 }

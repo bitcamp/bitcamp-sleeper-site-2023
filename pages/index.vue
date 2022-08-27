@@ -124,30 +124,6 @@ export default {
   background-repeat: no-repeat;
 }
 
-@keyframes water-ripple {
-
-  0%,
-  100% {
-    -webkit-transform: translateX(2vw);
-  }
-
-  50% {
-    -webkit-transform: translateX(-2vw);
-  }
-}
-
-@-webkit-keyframes water-ripple {
-
-  0%,
-  100% {
-    -webkit-transform: translateX(2vw);
-  }
-
-  50% {
-    -webkit-transform: translateX(-2vw);
-  }
-}
-
 img.white-blobs {
   /* Set rules to fill background */
 

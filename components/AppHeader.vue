@@ -75,7 +75,6 @@ export default {
 
 .rotating-div {
   animation: floatie-rotate 10s ease infinite reverse;
-  transform: rotate(17deg);
 }
 
 .header-container {

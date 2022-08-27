@@ -1,79 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="1914.4658"
-   height="1026.5958"
-   viewBox="0 0 1914.4658 1026.5958"
-   fill="none"
-   version="1.1"
-   id="svg824"
-   sodipodi:docname="footer floatie.svg"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs828" />
-  <sodipodi:namedview
-     id="namedview826"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="0.35552638"
-     inkscape:cx="1139.156"
-     inkscape:cy="146.262"
-     inkscape:window-width="1500"
-     inkscape:window-height="950"
-     inkscape:window-x="0"
-     inkscape:window-y="12"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg824" />
-  <rect
-     x="869.62885"
-     y="593.97113"
-     width="772.25897"
-     height="661.776"
-     rx="92"
-     transform="rotate(-17)"
-     fill="#6db0cd"
-     fill-opacity="0.5"
-     id="rect812" />
-  <rect
-     x="-89.679863"
-     y="286.38962"
-     width="1738"
-     height="776"
-     rx="194"
-     transform="rotate(-11)"
-     fill="#ffaf3f"
-     id="rect814" />
-  <rect
-     x="-36.259766"
-     y="356.25739"
-     width="1598.48"
-     height="636.97803"
-     rx="124"
-     transform="rotate(-11)"
-     fill="#ff6f3f"
-     id="rect816" />
-  <ellipse
-     cx="1400.6183"
-     cy="898.836"
-     rx="26.5"
-     ry="26"
-     transform="rotate(-28)"
-     fill="#ff6f3f"
-     id="ellipse818" />
-  <circle
-     cx="1393.1193"
-     cy="839.8363"
-     r="19"
-     transform="rotate(-28)"
-     fill="#ff6f3f"
-     id="circle820" />
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1914.4658" height="1026.5958" viewBox="0 0 1914.4658 1026.5958" fill="none" version="1.1" id="svg824" xmlns="http://www.w3.org/2000/svg">
+  <rect x="831.38" y="567.846" width="738.292" height="632.669" rx="92" fill="#6db0cd" fill-opacity="0.5" id="rect812" transform="matrix(0.956305, -0.292372, 0.292372, 0.956305, 3.464626, -0.402731)"/>
+  <rect x="-85.736" y="273.794" width="1661.557" height="741.869" rx="194" transform="matrix(0.981627, -0.190809, 0.190809, 0.981627, 3.464626, -0.402731)" fill="#ffaf3f" id="rect814"/>
+  <rect x="-34.665" y="340.587" width="1528.174" height="608.961" rx="124" transform="matrix(0.981627, -0.190809, 0.190809, 0.981627, 3.464626, -0.402731)" fill="#ff6f3f" id="rect816"/>
+  <ellipse cx="1400.618" cy="898.836" rx="25.334" ry="24.856" transform="matrix(0.882948, -0.469472, 0.469472, 0.882948, -69.487488, -6.387674)" fill="#ff6f3f" id="ellipse818"/>
+  <circle cx="1393.119" cy="839.836" r="18.164" transform="matrix(0.882948, -0.469472, 0.469472, 0.882948, -67.977992, -4.251279)" fill="#ff6f3f" id="circle820"/>
 </svg>

@@ -1,13 +1,10 @@
 <template>
   <footer>
-    <kinesis-container :strength="25">
-      <kinesis-element :strength="25">
-        <img
-          class="footer-floatie"
-          src="/assets/img/floaties/footer-floatie.svg"
-        />
-      </kinesis-element>
-    </kinesis-container>
+    <div class="rotate-div">
+      <div class="bob-div">
+        <img class="footer-floatie" src="/assets/img/floaties/footer-floatie.svg" />
+      </div>
+    </div>
 
     <div class="floatie-text">
       <div class="links">
@@ -29,6 +26,14 @@ export default {
 </script>
 
 <style scoped>
+.rotate-div {
+  animation: footer-rotate 10s ease infinite reverse;
+}
+
+.bob-div {
+  animation: footer-bob 6s ease infinite reverse;
+}
+
 footer {
   position: relative;
   box-sizing: border-box;

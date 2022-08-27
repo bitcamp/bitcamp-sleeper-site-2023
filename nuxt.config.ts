@@ -7,4 +7,5 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/global.css'],
   plugins: ['~/plugins/vue-kinesis.js'],
+  target: 'static',
 });

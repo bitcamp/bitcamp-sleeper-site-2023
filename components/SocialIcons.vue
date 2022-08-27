@@ -25,20 +25,30 @@ export default {
 </script>
 
 <style>
-.social {
-}
-
 .social-icon {
   width: 3.5vw;
   height: 3.5vw;
-  padding: 0.25vw;
+  padding: 0.5vw;
   transition: opacity 0.2s, padding 0.2s, width 0.2s, height 0.2s;
 }
 
 .social-icon:hover {
-  width: 4vw;
-  height: 4vw;
-  padding: 0px;
+  width: 4.5vw;
+  height: 4.5vw;
+  padding: 0vw;
   transition: opacity 0.2s, padding 0.2s, width 0.2s, height 0.2s;
+}
+
+/* mobile view - icon size */
+@media (max-width: 768px) {
+  .social-icon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .social-icon:hover {
+    width: 6vw;
+    height: 6vw;
+  }
 }
 </style>

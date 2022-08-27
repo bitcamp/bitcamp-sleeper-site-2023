@@ -1,21 +1,23 @@
 <template>
   <div class="grid-container">
-    <div class="rotate-div">
+    <div class="bb-rotate-div">
       <div class="bob-div">
         <img class="bb-floatie" src="/assets/img/floaties/bb-floatie.svg" />
         <h1 class="bb-floatie-text">Explore Our Past Events</h1>
       </div>
     </div>
-
     <div class="past-grid">
       <template v-for="year in years" :key="year">
         <EventCard :year="year" :theme="themes[year]" />
       </template>
     </div>
-    <div class="rotate-div">
-      <div class="bob-div">
-        <img class="circle-floatie" src="/assets/img/floaties/circle-floatie.svg" />
-      </div>
+    <div class="circle-rotate-div">
+      <!-- <div class="bob-div"> -->
+      <img
+        class="circle-floatie"
+        src="/assets/img/floaties/circle-floatie.svg"
+      />
+      <!-- </div> -->
     </div>
   </div>
 </template>
@@ -44,16 +46,9 @@ export default {
 </script>
 
 <style scoped>
-.rotate-div {
-  animation: floatie-rotate 7s ease infinite reverse;
-}
-
-.bob-div {
-  animation: floatie-bob 6s ease infinite reverse;
-}
-
 .grid-container {
   position: relative;
+  margin-top: -10vw;
 }
 
 .past-grid {
@@ -63,17 +58,50 @@ export default {
   width: 100%;
 }
 
+@keyframes bb-rotate {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(-8deg);
+  }
+}
+
+@keyframes circle-rotate {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.bb-rotate-div {
+  animation: bb-rotate 8s ease infinite reverse;
+}
+
+.circle-rotate-div {
+  animation: circle-rotate 8s ease infinite reverse;
+}
+
+.bob-div {
+  animation: floatie-bob 6s ease infinite reverse;
+}
+
 .bb-floatie {
   width: 50vw;
   margin-left: -2vw;
-  margin-bottom: -15vw;
+  margin-bottom: -12vw;
 }
 
 .bb-floatie-text {
   position: absolute;
   transform: rotate(-20.5deg);
   font-size: 2.8vw;
-
   top: 13vw;
   left: 7.5vw;
 }
@@ -85,12 +113,34 @@ export default {
 }
 
 /* mobile view */
+
+/* bb floatie size */
+@media (max-width: 768px) {
+  .bb-floatie {
+    width: 70vw;
+    margin-left: -5vw;
+    margin-bottom: -20vw;
+  }
+
+  .bb-floatie-text {
+    font-size: 5vw;
+    top: 17.5vw;
+    left: 2.5vw;
+  }
+}
+
+/* circle floatie position */
 @media (max-width: 920px) {
-  .circle-floatie {
+  .circle-rotate-div {
     position: absolute;
     margin-top: 0;
     left: 0;
-    top: 60vh;
+    top: 0vh;
+  }
+
+  .circle-floatie {
+    width: 100vw;
+    margin-top: 70vh;
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
-    <img src="../assets/img/blobs/blue-blobs.svg" class="blue-blobs" />
-    <img src="../assets/img/blobs/white-blobs.svg" class="white-blobs" />
+    <img src="/assets/img/blobs/blue-blobs.svg" class="blue-blobs" />
+    <img src="/assets/img/blobs/white-blobs.svg" class="white-blobs" />
     <AppHeader />
     <PastEventsGrid />
     <AppFooter />
@@ -122,6 +122,17 @@ export default {
   min-height: 100%;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+@keyframes water-ripple {
+  0%,
+  100% {
+    transform: translateX(2vw);
+  }
+
+  50% {
+    transform: translateX(-2vw);
+  }
 }
 
 img.white-blobs {

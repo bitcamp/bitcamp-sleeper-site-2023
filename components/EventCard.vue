@@ -77,7 +77,7 @@ export default {
 }
 
 .filler:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(203, 242, 255, 0.3); /* #cbf2ff with 0.3 opacity */
   transition: 0.4s;
 }
 </style>

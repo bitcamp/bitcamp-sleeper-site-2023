@@ -2,7 +2,10 @@
   <footer>
     <div class="rotate-div">
       <div class="bob-div">
-        <img class="footer-floatie" src="/assets/img/floaties/footer-floatie.svg" />
+        <img
+          class="footer-floatie"
+          src="/assets/img/floaties/footer-floatie.svg"
+        />
       </div>
     </div>
 
@@ -26,6 +29,28 @@ export default {
 </script>
 
 <style scoped>
+@keyframes footer-rotate {
+  0%,
+  100% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes footer-bob {
+  0%,
+  100% {
+    transform: translateY(2vw);
+  }
+
+  50% {
+    transform: translateY(0.5vw);
+  }
+}
+
 .rotate-div {
   animation: footer-rotate 10s ease infinite reverse;
 }
@@ -44,8 +69,8 @@ footer {
 }
 
 .footer-floatie {
-  width: 110%;
-  margin-left: -10vw;
+  width: 120%;
+  margin-left: -15vw;
 }
 
 .floatie-text {

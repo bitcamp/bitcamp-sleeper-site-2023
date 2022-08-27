@@ -1,17 +1,25 @@
 <template>
   <div class="rotating-div">
     <div class="header-container">
+      <img
+        class="header-floatie"
+        src="/assets/img/floaties/header-floatie.svg"
+      />
       <div class="header-content">
-        <img class="green-marshie" src="../assets/img/floaties/green-marshie.png" />
+        <img
+          class="green-marshie"
+          src="/assets/img/floaties/green-marshie.png"
+        />
         <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
-        <p class="header-body">
-          Bitcamp will return in 2023!<br />
-          Follow us on our socials to be the first to know when<br />
-          organizer applications and general registration opens!
-        </p>
+        <div class="header-body">
+          <p>Bitcamp will return in 2023!</p>
+          <p>
+            Follow us on our socials to be the first to know when organizer
+            applications and general registration opens!
+          </p>
+        </div>
         <SocialIcons />
       </div>
-      <img class="header-floatie" src="/assets/img/floaties/header-floatie.svg" />
     </div>
   </div>
 </template>
@@ -25,56 +33,19 @@ export default {
 </script>
 
 <style scoped>
-@keyframes floatie-bob {
-
+@keyframes header-rotate {
   0%,
   100% {
-    -webkit-transform: translateY(1vw);
+    transform: rotate(17deg);
   }
 
   50% {
-    -webkit-transform: translateY(-1vw);
-  }
-}
-
-@-webkit-keyframes floatie-bob {
-
-  0%,
-  100% {
-    -webkit-transform: translateY(1vw);
-  }
-
-  50% {
-    -webkit-transform: translateY(-1vw);
-  }
-}
-
-@keyframes floatie-rotate {
-
-  0%,
-  100% {
-    -webkit-transform: rotate(17deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(14deg);
-  }
-}
-
-@-webkit-keyframes floatie-rotate {
-
-  0%,
-  100% {
-    -webkit-transform: rotate(17deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(14deg);
+    transform: rotate(14deg);
   }
 }
 
 .rotating-div {
-  animation: floatie-rotate 10s ease infinite reverse;
+  animation: header-rotate 10s ease infinite reverse;
 }
 
 .header-container {
@@ -83,15 +54,15 @@ export default {
 }
 
 .header-floatie {
+  width: 100vw;
   margin-left: -15vw;
   margin-top: -10vw;
-  width: 100vw;
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 3vw;
 
   position: absolute;
   text-align: right;
@@ -105,16 +76,51 @@ export default {
 }
 
 .header-body {
-  width: auto;
+  width: 35vw;
   font-size: 1.4vw;
+}
+
+p {
+  margin: 0;
 }
 
 .green-marshie {
   position: absolute;
   text-align: left;
   transform: rotate(-17deg);
-  width: 29vw;
+  width: 30vw;
   margin-top: -5vw;
   margin-left: -30vw;
+}
+
+/* mobile view - header size */
+@media (max-width: 768px) {
+  .header-floatie {
+    width: 140vw;
+    margin-left: -45vw;
+    margin-top: -10vw;
+  }
+
+  .header-content {
+    top: 14.5vw;
+    right: 23vw;
+  }
+
+  .header-title {
+    font-size: 5vw;
+    line-height: 1;
+  }
+
+  .header-body {
+    width: 45vw;
+    font-size: 3vw;
+    line-height: 1.3;
+  }
+
+  .green-marshie {
+    width: 40vw;
+    margin-top: -4vw;
+    margin-left: -36vw;
+  }
 }
 </style>

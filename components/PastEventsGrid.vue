@@ -110,6 +110,7 @@ export default {
   width: 75vw;
   margin-left: 60vw;
   margin-top: -75vh;
+  margin-bottom: -4vw;
 }
 
 /* mobile view */

@@ -10,13 +10,16 @@
           class="green-marshie"
           src="/assets/img/floaties/green-marshie.png"
         />
-        <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
+        <h1 class="header-title">shh... we’re on vacation :)</h1>
         <div class="header-body">
           <p>Bitcamp will return in 2023!</p>
-          <p>
-            Follow us on our socials to be the first to know when organizer
-            applications and general registration opens!
-          </p>
+          <p>In the meantime, apply to join us as an organizer.</p>
+          <div class="button-container">
+            <LinkButton
+              text="Apply Now!"
+              link="https://forms.gle/o8ReRB6vfvJBRtRx7"
+            />
+          </div>
         </div>
         <SocialIcons />
       </div>
@@ -25,10 +28,11 @@
 </template>
 
 <script lang="ts">
+import LinkButton from '~/components/LinkButton.vue';
 import SocialIcons from '~/components/SocialIcons.vue';
 export default {
   name: 'AppHeader',
-  components: { SocialIcons },
+  components: { LinkButton, SocialIcons },
 };
 </script>
 
@@ -62,31 +66,36 @@ export default {
 .header-content {
   display: flex;
   flex-direction: column;
-  gap: 3vw;
+  gap: 2vw;
 
   position: absolute;
   text-align: right;
-  top: 10vw;
-  right: 30vw;
+  align-items: flex-end;
+  top: 8.5vw;
+  right: 29vw;
+  font-size: 1.7vw;
 }
 
 .header-title {
+  width: 20vw; /* two lines */
   line-height: 1.3;
   font-size: 2.8vw;
 }
 
 .header-body {
-  width: 35vw;
-  font-size: 1.4vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  width: 40vw;
 }
 
-p {
-  margin: 0;
+.button-container {
+  margin-top: 0.5vw;
 }
 
 .green-marshie {
   position: absolute;
-  text-align: left;
+  align-self: flex-start;
   transform: rotate(-17deg);
   width: 30vw;
   margin-top: -5vw;
@@ -102,25 +111,27 @@ p {
   }
 
   .header-content {
-    top: 14.5vw;
-    right: 23vw;
+    gap: 3vw;
+    top: 15vw;
+    right: 22vw;
+    font-size: 3vw;
   }
 
   .header-title {
+    width: auto; /* one line */
     font-size: 5vw;
     line-height: 1;
   }
 
   .header-body {
     width: 45vw;
-    font-size: 3vw;
     line-height: 1.3;
   }
 
   .green-marshie {
     width: 40vw;
     margin-top: -4vw;
-    margin-left: -36vw;
+    margin-left: -28vw;
   }
 }
 </style>

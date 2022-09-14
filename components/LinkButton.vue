@@ -27,12 +27,12 @@ export default {
   align-items: center;
   padding: 1vw;
   border-radius: 1rem;
-  background-color: #479f79;
+  background-color: #009051;
   transition: 0.4s;
 }
 
 .button:hover {
-  background-color: #387f60; /* darken 20% */
+  background-color: #005f36;
   transition: 0.4s;
 }
 

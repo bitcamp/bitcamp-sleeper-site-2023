@@ -27,17 +27,17 @@ export default {
   align-items: center;
   padding: 1vw;
   border-radius: 1rem;
-  background-color: #ffaf3f;
+  background-color: #479f79;
+  transition: 0.4s;
 }
 
 .button:hover {
-  background-color: rgb(255, 175, 63, 0.5); /* #ffaf3f with 0.5 opacity */
+  background-color: #387f60; /* darken 20% */
   transition: 0.4s;
 }
 
 .button-text {
-  /* color: #000; */
-  font-size: 1.4vw;
+  font-size: 1.7vw;
 }
 
 /* mobile view */

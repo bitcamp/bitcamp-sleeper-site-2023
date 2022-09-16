@@ -80,4 +80,11 @@ export default {
   background: rgba(203, 242, 255, 0.3); /* #cbf2ff with 0.3 opacity */
   transition: 0.4s;
 }
+
+/* mobile view */
+@media (max-width: 768px) {
+  .event-text {
+    padding: 0px 0px 25px 25px;
+  }
+}
 </style>

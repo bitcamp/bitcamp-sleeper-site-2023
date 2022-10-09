@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>Follow us to stay updated!</p>
     <div class="social">
       <a href="https://www.instagram.com/bitcamp">
         <img src="/assets/img/icons/ig.svg" class="social-icon" />
@@ -29,7 +28,6 @@ export default {
 
 <style>
 .social {
-  margin-top: -0.5rem;
   margin-right: -0.5rem;
 }
 

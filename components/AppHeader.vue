@@ -10,16 +10,13 @@
           class="green-marshie"
           src="/assets/img/floaties/green-marshie.png"
         />
-        <h1 class="header-title">shh... we’re on vacation :)</h1>
+        <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
         <div class="header-body">
           <p>Bitcamp will return in 2023!</p>
-          <p>In the meantime, apply to join us as an organizer.</p>
-          <div class="button-container">
-            <LinkButton
-              text="Apply Now!"
-              link="https://forms.gle/o8ReRB6vfvJBRtRx7"
-            />
-          </div>
+          <p>
+            Follow us on our socials to be the first to know when registration
+            opens!
+          </p>
         </div>
         <SocialIcons />
       </div>
@@ -28,11 +25,10 @@
 </template>
 
 <script lang="ts">
-import LinkButton from '~/components/LinkButton.vue';
 import SocialIcons from '~/components/SocialIcons.vue';
 export default {
   name: 'AppHeader',
-  components: { LinkButton, SocialIcons },
+  components: { SocialIcons },
 };
 </script>
 
@@ -71,13 +67,12 @@ export default {
   position: absolute;
   text-align: right;
   align-items: flex-end;
-  top: 8vw;
-  right: 29vw;
+  top: 10vw;
+  right: 30vw;
   font-size: 1.7vw;
 }
 
 .header-title {
-  width: 20vw; /* two lines */
   line-height: 1.3;
   font-size: 2.8vw;
 }
@@ -86,11 +81,8 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
-  width: 40vw;
-}
-
-.button-container {
-  margin-top: 0.5vw;
+  gap: 1vw;
+  width: 38vw;
 }
 
 .green-marshie {
@@ -112,26 +104,25 @@ export default {
 
   .header-content {
     gap: 3vw;
-    top: 15vw;
-    right: 22vw;
+    top: 14.5vw;
+    right: 23vw;
     font-size: 3vw;
   }
 
   .header-title {
-    width: auto; /* one line */
     font-size: 5vw;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .header-body {
-    width: 45vw;
     line-height: 1.3;
+    gap: 1.5vw;
   }
 
   .green-marshie {
     width: 40vw;
     margin-top: -4vw;
-    margin-left: -28vw;
+    margin-left: -38vw;
   }
 }
 </style>

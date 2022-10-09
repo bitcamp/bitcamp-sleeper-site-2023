@@ -1,15 +1,17 @@
 <template>
-  <div class="grid-container">
+  <div class="section-container">
     <div class="bb-rotate-div">
       <div class="bob-div">
         <img class="bb-floatie" src="/assets/img/floaties/bb-floatie.svg" />
         <h1 class="bb-floatie-text">Explore Our Past Events</h1>
       </div>
     </div>
-    <div class="past-grid">
-      <template v-for="year in years" :key="year">
-        <EventCard :year="year" :theme="themes[year]" />
-      </template>
+    <div class="past-grid-container">
+      <div class="past-grid">
+        <template v-for="year in years" :key="year">
+          <EventCard :year="year" :theme="themes[year]" />
+        </template>
+      </div>
     </div>
     <div class="circle-rotate-div">
       <div class="bob-div">
@@ -46,16 +48,23 @@ export default {
 </script>
 
 <style scoped>
-.grid-container {
+.section-container {
   position: relative;
   margin-top: -10vw;
+}
+
+.past-grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .past-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 100rem;
 }
 
 @keyframes bb-rotate {

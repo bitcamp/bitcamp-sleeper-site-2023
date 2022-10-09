@@ -12,12 +12,12 @@
       </template>
     </div>
     <div class="circle-rotate-div">
-      <!-- <div class="bob-div"> -->
-      <img
-        class="circle-floatie"
-        src="/assets/img/floaties/circle-floatie.svg"
-      />
-      <!-- </div> -->
+      <div class="bob-div">
+        <img
+          class="circle-floatie"
+          src="/assets/img/floaties/circle-floatie.svg"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
   components: { EventCard },
   data() {
     return {
-      years: [2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014],
+      years: [2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014] as const,
       themes: {
         2022: 'Adventure Awaits',
         2021: 'Explore Together',

@@ -2,24 +2,20 @@
   <div class="section-container">
     <div class="bb-rotate-div">
       <div class="bob-div">
-        <img class="bb-floatie" src="/assets/img/floaties/bb-floatie.svg" />
-        <h1 class="bb-floatie-text">Explore Our Past Events</h1>
+        <img class="bb-floatie" src="/assets/img/floaties/wood-board.svg" />
+        <h1 class="bb-floatie-text">Frequently Asked Questions</h1>
       </div>
     </div>
-    <div class="past-grid-container">
+    <FAQ />
+    <!-- <div class="past-grid-container">
       <div class="past-grid">
         <template v-for="year in years" :key="year">
           <EventCard :year="year" :theme="themes[year]" />
         </template>
       </div>
-    </div>
+    </div>-->
     <div class="circle-rotate-div">
-      <div class="bob-div">
-        <img
-          class="circle-floatie"
-          src="/assets/img/floaties/circle-floatie.svg"
-        />
-      </div>
+      <img class="circle-floatie" src="/assets/img/floaties/cactus.svg" />
     </div>
   </div>
 </template>
@@ -68,6 +64,7 @@ export default {
 }
 
 @keyframes bb-rotate {
+
   0%,
   100% {
     transform: rotate(-5deg);
@@ -79,6 +76,7 @@ export default {
 }
 
 @keyframes circle-rotate {
+
   0%,
   100% {
     transform: rotate(-2deg);
@@ -90,36 +88,37 @@ export default {
 }
 
 .bb-rotate-div {
-  animation: bb-rotate 8s ease infinite reverse;
+  /* animation: bb-rotate 8s ease infinite reverse; */
 }
 
 .circle-rotate-div {
-  animation: circle-rotate 8s ease infinite reverse;
+  /* animation: circle-rotate 8s ease infinite reverse; */
 }
 
 .bob-div {
-  animation: floatie-bob 6s ease infinite reverse;
+  /* animation: floatie-bob 6s ease infinite reverse; */
 }
 
 .bb-floatie {
+  transform: rotate(10deg);
   width: 50vw;
   margin-left: -2vw;
-  margin-bottom: -12vw;
+  margin-bottom: -21vw;
 }
 
 .bb-floatie-text {
   position: absolute;
-  transform: rotate(-20.5deg);
+  transform: rotate(-10deg);
   font-size: 2.8vw;
   top: 13vw;
-  left: 7.5vw;
+  left: 3vw;
 }
 
 .circle-floatie {
-  width: 75vw;
-  margin-left: 60vw;
-  margin-top: -75vh;
-  margin-bottom: -4vw;
+  width: 39vw;
+  margin-left: -13vw;
+  margin-top: -15vh;
+  margin-bottom: -9vw;
 }
 
 /* mobile view */
@@ -133,7 +132,7 @@ export default {
   }
 
   .bb-floatie-text {
-    font-size: 5vw;
+    font-size: 4vw;
     top: 17.5vw;
     left: 2.5vw;
   }
@@ -143,14 +142,17 @@ export default {
 @media (max-width: 920px) {
   .circle-rotate-div {
     position: absolute;
-    margin-top: 0;
-    left: 0;
-    top: 0vh;
+    width: 39vw;
+    margin-left: -13vw;
+    margin-top: -13vh;
+    margin-bottom: -9vw;
   }
 
   .circle-floatie {
-    width: 100vw;
-    margin-top: 70vh;
+    width: 39vw;
+    margin-left: -3vw;
+    margin-bottom: -16vw;
+    margin-bottom: -9vw;
   }
 }
 </style>

@@ -1,22 +1,15 @@
 <template>
   <div class="rotating-div">
     <div class="header-container">
-      <img
-        class="header-floatie"
-        src="/assets/img/floaties/header-floatie.svg"
-      />
+      <img class="header-floatie" src="/assets/img/floaties/top-rug.svg" />
       <div class="header-content">
-        <img
-          class="green-marshie"
-          src="/assets/img/floaties/green-marshie.png"
-        />
-        <h1 class="header-title">shh... we’re on<br />vacation :)</h1>
+        <img class="green-marshie" src="/assets/img/floaties/green-marshie.png" />
+        <h1 class="header-title">registration is now open</h1>
         <div class="header-body">
-          <p>Bitcamp will return in 2023!</p>
-          <p>
-            Follow us on our socials to be the first to know when registration
-            opens!
-          </p>
+          <RegisterButton />
+          <p>Bitcamp returns on 4/7/2023 - 4/9/2023</p>
+          <p>Follow us on our socials to stay updated!</p>
+
         </div>
         <SocialIcons />
       </div>
@@ -34,6 +27,7 @@ export default {
 
 <style scoped>
 @keyframes header-rotate {
+
   0%,
   100% {
     transform: rotate(17deg);
@@ -45,36 +39,37 @@ export default {
 }
 
 .rotating-div {
-  animation: header-rotate 10s ease infinite reverse;
+  /* animation: header-rotate 10s ease infinite reverse; */
+  transform: rotate(17deg);
 }
 
 .header-container {
   position: relative;
-  animation: floatie-bob 6s ease infinite reverse;
+  /* animation: floatie-bob 6s ease infinite reverse; */
 }
 
 .header-floatie {
   width: 100vw;
   margin-left: -15vw;
-  margin-top: -10vw;
+  margin-top: 0vw;
+  margin-bottom: -20vw;
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
-
+  gap: 1vw;
   position: absolute;
   text-align: right;
   align-items: flex-end;
-  top: 10vw;
-  right: 30vw;
+  top: 15vw;
+  right: 40vw;
   font-size: 1.7vw;
 }
 
 .header-title {
   line-height: 1.3;
-  font-size: 2.8vw;
+  font-size: 3.5vw;
 }
 
 .header-body {
@@ -82,35 +77,35 @@ export default {
   flex-flow: column nowrap;
   align-items: flex-end;
   gap: 1vw;
-  width: 38vw;
+  width: 34vw;
 }
 
 .green-marshie {
   position: absolute;
   align-self: flex-start;
   transform: rotate(-17deg);
-  width: 30vw;
+  width: 28vw;
   margin-top: -5vw;
-  margin-left: -30vw;
+  margin-left: -27vw;
 }
 
 /* mobile view - header size */
 @media (max-width: 768px) {
   .header-floatie {
     width: 140vw;
-    margin-left: -45vw;
+    margin-left: -35vw;
     margin-top: -10vw;
+    margin-bottom: -24vw;
   }
 
   .header-content {
-    gap: 3vw;
-    top: 14.5vw;
-    right: 23vw;
+    top: 10vw;
+    right: 27vw;
     font-size: 3vw;
   }
 
   .header-title {
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 1.2;
   }
 

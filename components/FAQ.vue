@@ -2,17 +2,16 @@
   <div class="FAQ_Section">
     <h2 class="Header">{{ heading }}</h2>
     <div class="Question_Wrapper">
-      <div class="Question_Column">
-        <div
-          class="Question"
-          v-for="(faq, i) in questions_left"
-          :faq="faq"
-          :key="i"
-        >
+      <div
+        v-for="(questions, i) in [questions_left, questions_right]"
+        :key="i"
+        class="Question_Column"
+      >
+        <div v-for="(faq, i) in questions" :key="i" class="Question" :faq="faq">
           <button
-            @click="toggleButton(faq.question)"
             class="Question_Button"
             :class="{ opened: faq.question === currentOpenedQuestion }"
+            @click="toggleButton(faq.question)"
           >
             {{ faq.question }}
           </button>
@@ -22,34 +21,8 @@
                 ? 'Answer_Opened'
                 : 'Answer'
             "
-          >
-            {{ faq.answer }}
-          </div>
-        </div>
-      </div>
-      <div class="Question_Column">
-        <div
-          class="Question"
-          v-for="(faq, i) in questions_right"
-          :faq="faq"
-          :key="i"
-        >
-          <button
-            @click="toggleButton(faq.question)"
-            class="Question_Button"
-            :class="{ opened: faq.question === currentOpenedQuestion }"
-          >
-            {{ faq.question }}
-          </button>
-          <div
-            :class="
-              faq.question === currentOpenedQuestion
-                ? 'Answer_Opened'
-                : 'Answer'
-            "
-          >
-            {{ faq.answer }}
-          </div>
+            v-html="faq.answer"
+          />
         </div>
       </div>
     </div>
@@ -138,7 +111,8 @@ const questions = ref<FAQ[]>([
   },
   {
     question: 'Other questions?',
-    answer: 'Just email us at hello@bit.camp.', //Add Link
+    answer:
+      'Just email us at <a class="email" href="mailto:hello@bit.camp">hello@bit.camp</a>.',
   },
 ]);
 const questions_left = questions.value.slice(0, questions.value.length / 2);
@@ -156,7 +130,7 @@ function toggleButton(question: string) {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .FAQ_Section {
   border-radius: 30px;
   padding: 4vw;
@@ -279,5 +253,12 @@ function toggleButton(question: string) {
   .FAQ_Section {
     margin-bottom: 34vw;
   }
+}
+</style>
+
+<style lang="scss">
+a.email {
+  color: var(--color-bitcamp);
+  text-decoration: underline;
 }
 </style>

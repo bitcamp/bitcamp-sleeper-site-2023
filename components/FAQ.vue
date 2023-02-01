@@ -94,9 +94,9 @@ const questions = ref<FAQ[]>([
             'Arduinos, sensors (ultrasonic, photoresistors, thermistors), inputs (buttons, switches), outputs (LEDs, piezo speakers, 7-segment displays, micro servo motors), passive components (resistors, capacitors, diodes), and wiring.',
     },
     {
-        question: 'Do I need to wear a mask?',
+        question: 'What if I don\'t go to the University of Maryland?',
         answer:
-            'No, attendees are not required to wear a mask. However, feel free to wear a mask if you would like!',
+            'We\'d love to have you attend! You can fill out the travel interest form located <a class="link" href="https://bit.camp/travel-interest">here!</a>',
     },
     {
         question: 'Other questions?',
@@ -228,11 +228,15 @@ function toggleButton(question: string) {
     .Question,
     .Question_Button {
         font-size: 4vw;
+    }
+
+    .Question_Button {
         height: 15vw;
     }
 
     .Answer,
     .Answer_Opened {
+        height: 100%;
         font-size: 3.5vw;
     }
 

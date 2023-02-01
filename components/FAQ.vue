@@ -274,7 +274,7 @@ function toggleButton(question: string) {
 
   .Answer,
   .Answer_Opened {
-    font-size: 3.8vw;
+    font-size: 3.5vw;
   }
 
   .FAQ_Section {

@@ -59,7 +59,8 @@ const questions = ref<FAQ[]>([
   },
   {
     question: "Can I attend if I'm a minor (under 18)?",
-    answer: 'Yes! Minors can attend with a chaperone, and can apply here!', //ADD LINK
+    answer:
+      'Unfortunately, we are currently not accepting minor applications — check back in late February for updates on minor applications!',
   },
   {
     question: "Can I attend if I don't want to participate in hacking?",
@@ -107,7 +108,7 @@ const questions = ref<FAQ[]>([
   {
     question: 'Do I need to wear a mask?',
     answer:
-      'Yes, all attendees are required to wear a mask at all times except when eating and sleeping.',
+      'No, attendees are not required to wear a mask. However, feel free to wear a mask if you would like!',
   },
   {
     question: 'Other questions?',

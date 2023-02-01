@@ -204,18 +204,16 @@ function toggleButton(question: string) {
 
 .Question_Button {
   &::after {
-    content: url(../assets/img/icons/plus_sign.png);
-    height: auto;
-    transform-origin: 48% 29%;
+    content: url(../assets/img/icons/plus.svg);
+    width: 3rem;
+    height: 3rem;
     transform: rotate(0deg);
     transition: all 0.4s ease-out;
   }
 
   &.opened {
     &::after {
-      content: url(../assets/img/icons/plus_sign.png);
       transform: rotate(90deg);
-      transition: all 0.4s ease-out;
     }
   }
 

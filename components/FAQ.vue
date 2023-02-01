@@ -1,6 +1,5 @@
 <template>
   <div class="FAQ_Section">
-    <h2 class="Header">{{ heading }}</h2>
     <div class="Question_Wrapper">
       <div
         v-for="(questions, i) in [questions_left, questions_right]"
@@ -35,7 +34,6 @@ interface FAQ {
   question: string;
   answer: string;
 }
-const heading = ref<string>('FAQ');
 const questions = ref<FAQ[]>([
   {
     question: 'What is Bitcamp?',
@@ -134,8 +132,7 @@ function toggleButton(question: string) {
 <style scoped lang="scss">
 .FAQ_Section {
   border-radius: 30px;
-  padding: 4vw;
-  padding-bottom: 8vw;
+  padding: 8vw 4vw;
   overflow-y: visible;
   aspect-ratio: 10;
   background-size: cover !important;
@@ -145,12 +142,6 @@ function toggleButton(question: string) {
   text-align: center;
   background-color: #1a2e33;
   margin: 8vw;
-}
-
-.Header {
-  font-size: 4rem;
-  padding: 2%;
-  padding-bottom: 3%;
 }
 
 .Question_Wrapper {

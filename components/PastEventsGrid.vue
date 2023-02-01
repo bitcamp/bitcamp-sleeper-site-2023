@@ -24,7 +24,6 @@
 import EventCard from '~/components/EventCard.vue';
 export default {
   name: 'PastEventsGrid',
-  components: { EventCard },
   data() {
     return {
       years: [2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014] as const,
@@ -64,7 +63,6 @@ export default {
 }
 
 @keyframes bb-rotate {
-
   0%,
   100% {
     transform: rotate(-5deg);
@@ -76,7 +74,6 @@ export default {
 }
 
 @keyframes circle-rotate {
-
   0%,
   100% {
     transform: rotate(-2deg);
@@ -128,7 +125,7 @@ export default {
   .bb-floatie {
     width: 70vw;
     margin-left: -5vw;
-    margin-bottom: -20vw;
+    margin-bottom: -25vw;
   }
 
   .bb-floatie-text {

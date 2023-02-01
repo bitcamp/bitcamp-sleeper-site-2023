@@ -178,8 +178,10 @@ function toggleButton(question: string) {
 .Question_Button {
   &::after {
     content: url(../assets/img/icons/plus.svg);
-    width: 3rem;
-    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-width: 3rem;
+    max-height: 3rem;
     transform: rotate(0deg);
     transition: all 0.4s ease-out;
   }

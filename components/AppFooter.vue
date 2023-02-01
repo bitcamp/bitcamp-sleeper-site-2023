@@ -13,7 +13,7 @@
         <a href="mailto:hello@bit.camp">Contact Us</a>
       </div>
       <div class="copyright">
-        Copyright &copy; 2019 - 2022 Bitcamp. All Rights Reserved.
+        Copyright &copy; 2019 - 2023 Bitcamp. All Rights Reserved.
       </div>
     </div>
   </footer>
@@ -27,7 +27,6 @@ export default {
 
 <style scoped>
 @keyframes footer-rotate {
-
   0%,
   100% {
     transform: rotate(-1deg);
@@ -39,7 +38,6 @@ export default {
 }
 
 @keyframes footer-bob {
-
   0%,
   100% {
     transform: translateY(2vw);

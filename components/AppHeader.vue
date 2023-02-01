@@ -93,14 +93,14 @@ export default {
 @media (max-width: 768px) {
   .header-floatie {
     width: 140vw;
-    margin-left: -35vw;
-    margin-top: -10vw;
+    margin-left: -36vw;
+    margin-top: 0vw;
     margin-bottom: -24vw;
   }
 
   .header-content {
-    top: 10vw;
-    right: 27vw;
+    top: 18vw;
+    right: 31vw;
     font-size: 3vw;
   }
 
@@ -115,9 +115,13 @@ export default {
   }
 
   .green-marshie {
-    width: 40vw;
-    margin-top: -4vw;
-    margin-left: -38vw;
+    width: 36vw;
+    margin-top: 4vw;
+    margin-left: -25vw;
   }
+
+  /* width: 36vw;
+  margin-top: 11vw;
+  margin-left: -31vw; */
 }
 </style>

@@ -70,7 +70,9 @@ footer {
   transform: rotate(-17deg);
   top: 2vh;
   width: 120%;
-  margin-left: -15vw;
+  margin-left: -3vw;
+  margin-top: -11vh;
+  padding-top: 4vh;
 }
 
 .floatie-text {

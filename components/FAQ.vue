@@ -151,6 +151,7 @@ function toggleButton(question: string) {
     text-align: center;
     background-color: #1A2E33;
     margin: 8vw;
+    margin-bottom: 34vw;
 }
 
 .Header {
@@ -171,7 +172,7 @@ function toggleButton(question: string) {
 .Question {
     display: block;
     padding-bottom: 2px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 20px;
     border-radius: 12px;
     margin: 0px;

@@ -1,4 +1,7 @@
 <template>
+    <div class="container">
+    </div>
+
     <div class="regButt">
         <a :href="`https://register.bit.camp`">
             <h1>Register Here!</h1>
@@ -11,6 +14,10 @@
 </script>
 
 <style scoped>
+.container {
+    height: 9vw;
+}
+
 .regButt {
     width: fit-content;
     margin-bottom: 10px;
@@ -20,8 +27,6 @@
     padding-top: 1.4vw;
     padding-bottom: 1.4vw;
 
-
-
     text-align: center;
     align-items: center;
     font-size: 1vw;
@@ -30,10 +35,10 @@
     background-size: cover !important;
     background: #14473B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
+    position: absolute;
 
     z-index: 10;
-    transition: padding 0.2s, width 0.2s, height 0.2s;
+    transition: all 0.2s;
 }
 
 .regButt:hover {
@@ -51,6 +56,10 @@
         padding-right: 2.3vw;
         padding-top: 1.4vw;
         padding-bottom: 1.4vw;
+    }
+
+    .container {
+        height: 12vw;
     }
 }
 </style>

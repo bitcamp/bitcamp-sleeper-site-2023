@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
-    <img src="/assets/img/blobs/blue-blobs.svg" class="blue-blobs" />
-    <img src="/assets/img/blobs/white-blobs.svg" class="white-blobs" />
+    <!-- <img src="/assets/img/blobs/cracks.svg" class="cracks" /> -->
+    <!-- <img src="/assets/img/blobs/white-blobs.svg" class="white-blobs" /> -->
     <AppHeader />
     <PastEventsGrid />
     <AppFooter />
@@ -117,6 +117,7 @@ export default {
   min-height: 100%;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-image: url(../assets/img/blobs/cracks.svg);
 }
 
 @keyframes water-ripple {
@@ -140,15 +141,12 @@ img.white-blobs {
   animation: water-ripple 10s ease infinite reverse;
 }
 
-img.blue-blobs {
+img.cracks {
   /* Set rules to fill background */
 
   /* Set up proportionate scaling */
-  width: 110%;
-  left: -2vw;
   /* Set up positioning */
   top: 0;
-  position: fixed;
-  animation: water-ripple 10s ease infinite;
+  position: absolute;
 }
 </style>

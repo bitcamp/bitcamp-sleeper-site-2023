@@ -2,10 +2,7 @@
   <footer>
     <div class="rotate-div">
       <div class="bob-div">
-        <img
-          class="footer-floatie"
-          src="/assets/img/floaties/footer-floatie.svg"
-        />
+        <img class="footer-floatie" src="/assets/img/floaties/top-rug.svg" />
       </div>
     </div>
 
@@ -16,7 +13,7 @@
         <a href="mailto:hello@bit.camp">Contact Us</a>
       </div>
       <div class="copyright">
-        Copyright &copy; 2019 - 2022 Bitcamp. All Rights Reserved.
+        Copyright &copy; 2019 - 2023 Bitcamp. All Rights Reserved.
       </div>
     </div>
   </footer>
@@ -52,11 +49,11 @@ export default {
 }
 
 .rotate-div {
-  animation: footer-rotate 10s ease infinite reverse;
+  /* animation: footer-rotate 10s ease infinite reverse; */
 }
 
 .bob-div {
-  animation: footer-bob 6s ease infinite reverse;
+  /* animation: footer-bob 6s ease infinite reverse; */
 }
 
 footer {
@@ -65,12 +62,15 @@ footer {
 
   height: 30vw;
   width: 100vw;
-  overflow: hidden;
 }
 
 .footer-floatie {
+  transform: rotate(-17deg);
+  top: 2vh;
   width: 120%;
-  margin-left: -15vw;
+  margin-left: -3vw;
+  margin-top: -11vh;
+  padding-top: 4vh;
 }
 
 .floatie-text {

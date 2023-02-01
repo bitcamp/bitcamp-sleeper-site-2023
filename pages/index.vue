@@ -121,7 +121,6 @@ export default {
 }
 
 @keyframes water-ripple {
-
   0%,
   100% {
     transform: translateX(2vw);

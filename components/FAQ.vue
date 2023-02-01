@@ -161,7 +161,6 @@ function toggleButton(question: string) {
   border-radius: 30px;
   padding: 4vw;
   padding-bottom: 8vw;
-  user-select: none;
   overflow-y: visible;
   aspect-ratio: 10;
   background-size: cover !important;

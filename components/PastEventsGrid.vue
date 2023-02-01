@@ -63,6 +63,7 @@ export default {
 }
 
 @keyframes bb-rotate {
+
   0%,
   100% {
     transform: rotate(-5deg);
@@ -74,6 +75,7 @@ export default {
 }
 
 @keyframes circle-rotate {
+
   0%,
   100% {
     transform: rotate(-2deg);
@@ -114,7 +116,7 @@ export default {
 .circle-floatie {
   width: 39vw;
   margin-left: -13vw;
-  margin-top: -15vh;
+  margin-top: -5vw;
   margin-bottom: -9vw;
 }
 

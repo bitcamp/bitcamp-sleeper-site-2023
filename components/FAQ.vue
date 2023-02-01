@@ -213,7 +213,8 @@ function toggleButton(question: string) {
     border-radius: 0px;
     text-emphasis: bold;
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.8vw;
+    line-height: 1.3;
     font-weight: bold;
     color: white;
     overflow: hidden;
@@ -224,23 +225,24 @@ function toggleButton(question: string) {
     padding: 0px 12px;
     padding-top: 1rem;
     text-align: left;
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     justify-content: top;
     max-height: 0px;
     max-width: 90%;
     overflow: hidden;
-    transition: all 0.6s ease-in-out;
+    transition: max-height 0.6s ease-in-out;
 }
 
 .Answer_Opened {
     padding: 0px 12px;
     padding-top: 1rem;
     text-align: left;
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     justify-content: top;
     max-width: 90%;
     overflow-y: auto;
-    transition: all 0.6s ease-in-out;
+    transition: max-height 0.6s ease-in-out;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {

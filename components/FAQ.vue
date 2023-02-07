@@ -25,6 +25,10 @@
         </div>
       </div>
     </div>
+    <div class="other-questions">
+      Other questions? Just email us at
+      <a class="link" href="mailto:hello@bit.camp">hello@bit.camp</a>
+    </div>
   </div>
 </template>
 
@@ -109,9 +113,9 @@ const questions = ref<FAQ[]>([
       'We\'d love to have you attend! You can fill out the travel interest form located <a class="link" href="https://bit.camp/travel-interest">here!</a>',
   },
   {
-    question: 'Other questions?',
+    question: 'Do I need to wear a mask?',
     answer:
-      'Just email us at <a class="email" href="mailto:hello@bit.camp">hello@bit.camp</a>.',
+      'No, attendees are not required to wear a mask. However, feel free to wear a mask if you would like!',
   },
 ]);
 const questions_left = questions.value.slice(0, questions.value.length / 2);
@@ -132,7 +136,8 @@ function toggleButton(question: string) {
 <style scoped lang="scss">
 .FAQ_Section {
   border-radius: 30px;
-  padding: 8vw 4vw;
+  padding: 4vw;
+  padding-top: 8vw;
   overflow-y: visible;
   aspect-ratio: 10;
   background-size: cover !important;
@@ -254,14 +259,13 @@ function toggleButton(question: string) {
     margin-bottom: 34vw;
   }
 }
+
+.other-questions {
+  margin-top: 4vw;
+}
 </style>
 
 <style lang="scss">
-a.email {
-  color: var(--color-bitcamp);
-  text-decoration: underline;
-}
-
 a.link {
   color: var(--color-bitcamp);
 }

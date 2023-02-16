@@ -1,7 +1,6 @@
 <template>
   <div class="app-container">
-    <!-- <img src="/assets/img/blobs/cracks.svg" class="cracks" /> -->
-    <!-- <img src="/assets/img/blobs/white-blobs.svg" class="white-blobs" /> -->
+    <MlhBadge />
     <AppHeader />
     <PastEventsGrid />
     <AppFooter />
@@ -9,13 +8,14 @@
 </template>
 
 <script lang="ts">
+import MlhBadge from '~/components/MlhBadge.vue';
 import AppHeader from '~/components/AppHeader.vue';
 import PastEventsGrid from '~/components/PastEventsGrid.vue';
 import AppFooter from '~/components/AppFooter.vue';
 
 export default {
   name: 'HomePage',
-  components: { AppHeader, PastEventsGrid, AppFooter },
+  components: { MlhBadge, AppHeader, PastEventsGrid, AppFooter },
   head() {
     return {
       title: 'Bitcamp',
